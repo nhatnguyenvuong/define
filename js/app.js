@@ -59,7 +59,7 @@
       hitLayer.appendChild(r);
     });
   }
-  hitLayer.addEventListener('pointerover', (e) => { const l = +e.target.dataset.level; if (l) setHeroLevel(l); });
+  hitLayer.addEventListener('pointerover', (e) => { const l = +e.target.dataset.level; if (l) { setHeroLevel(l); $('#towerHint').classList.add('gone'); } });
   hitLayer.addEventListener('click', (e) => { const l = +e.target.dataset.level; if (l) openFloor(l); });
   // leaving the tower clears the floor highlight; the level card keeps the last level
   hitLayer.addEventListener('pointerleave', () => { $('#band').classList.remove('on'); $('#floorTag').classList.remove('on'); });

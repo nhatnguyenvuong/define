@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=103" />
+  <link rel="stylesheet" href="css/style.css?v=109" />
   <script type="importmap">
     {
       "imports": {
@@ -112,6 +112,11 @@
     </ul>
 
     <!-- LEVEL CARD (follows the hovered level) -->
+    <!-- first-visit hint: hover the tower, click a floor -->
+    <p id="towerHint" class="tower-hint" aria-hidden="true">
+      <svg viewBox="0 0 20 20"><path d="M6 2.5v10.8l2.7-2.5 1.9 4.4 1.9-.8-1.9-4.3H14.3z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      Hover a floor · Click to view its plan
+    </p>
     <aside id="levelCard" class="level-card">
       <header class="lc-head">
         <span>RESIDENTIAL · LEVEL</span>
@@ -182,6 +187,6 @@
   <script src="js/modules.js?v=48"></script>
   <script src="js/footprints.js?v=72"></script>
   <script src="js/hand.js?v=105"></script>
-  <script src="js/app.js?v=106"></script>
+  <script src="js/app.js?v=109"></script>
 </body>
 </html>
