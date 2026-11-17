@@ -275,7 +275,6 @@
   function loadThree() {
     if (three) return Promise.resolve(three);
     if (!threeLoading) {
-      $('#u3dLoading').classList.add('on');
       threeLoading = Promise.all([
         import('three'), import('three/addons/controls/OrbitControls.js'),
         import('three/addons/lines/Line2.js'), import('three/addons/lines/LineMaterial.js'), import('three/addons/lines/LineGeometry.js'),
@@ -283,9 +282,8 @@
         import('three/addons/environments/RoomEnvironment.js'),
       ]).then(([T, O, L2, LM, LG, RB, RE]) => {
         three = initThree(T, { OrbitControls: O.OrbitControls, Line2: L2.Line2, LineMaterial: LM.LineMaterial, LineGeometry: LG.LineGeometry, RoundedBoxGeometry: RB.RoundedBoxGeometry, RoomEnvironment: RE.RoomEnvironment });
-        $('#u3dLoading').classList.remove('on');
         return three;
-      }).catch((err) => { console.error(err); $('#u3dLoading').textContent = '3D needs an internet connection (three.js)'; });
+      }).catch((err) => { console.error(err); toast('3D needs an internet connection'); });
     }
     return threeLoading;
   }
