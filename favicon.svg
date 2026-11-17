@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="77.5 -2 74 74">
+  <!-- DEFINE mark for the browser tab: bars thickened so they survive at 16px -->
+  <rect x="77.5" y="-2" width="74" height="74" rx="16" fill="#141110"/>
+  <g fill="#f4ead8">
+    <rect x="85" y="12.1" width="16" height="3.2" opacity="0.75"/><rect x="85" y="22.6" width="16" height="3.2" opacity="1"/><rect x="85" y="33.1" width="16" height="3.2" opacity="1"/><rect x="85" y="43.6" width="16" height="3.2" opacity="0.75"/><rect x="85" y="54.1" width="16" height="3.2" opacity="1"/><rect x="85" y="64.6" width="16" height="3.2" opacity="0.75"/><rect x="101" y="7.6" width="16" height="3.4"/><rect x="101" y="18.1" width="16" height="3.4"/><rect x="101" y="28.6" width="16" height="3.4"/><rect x="101" y="39.1" width="16" height="3.4"/><rect x="101" y="49.6" width="16" height="3.4"/><rect x="101" y="60.1" width="16" height="3.4"/><rect x="117" y="2.0" width="27" height="3.6"/><rect x="117" y="12.5" width="27" height="3.6"/><rect x="117" y="23.0" width="27" height="3.6"/><rect x="117" y="33.5" width="27" height="3.6"/><rect x="117" y="44.0" width="27" height="3.6"/><rect x="117" y="54.5" width="27" height="3.6"/>
+  </g>
+</svg>
